@@ -30,9 +30,9 @@ This portfolio showcases my front-end development skills, services, and projects
 ## 📬 Contact
 If you want to work with me or hire me for your project:
 
-**Email:** your-email@example.com  
+**Email:** maksudurrhmn2001@gmail.com 
 **Fiverr:** https://www.fiverr.com/yourusername  
-**GitHub:** https://github.com/yourusername  
+**GitHub:** https://github.com/maksudurrhmn  
 
 ---
 
