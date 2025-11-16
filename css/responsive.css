@@ -1,0 +1,137 @@
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  section {
+    margin: 0 5%;
+    padding: 0;
+  }
+  .navbar {
+    display: none;
+  }
+  #hamburger-navbar {
+    display: block;
+  }
+  #hero-section {
+    height: 100vh;
+  }
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    height: 80%;
+  }
+  .about-container {
+    height: fit-content;
+    flex-direction: column;
+    gap: 0;
+    height: 80%;
+  }
+  #about {
+    height: max-content;
+    margin-bottom: 4rem;
+  }
+  .hero-img {
+    width: auto;
+    height: 300px;
+    margin: 0 0 2rem 0;
+  }
+  #experience {
+    height: max-content;
+    margin-bottom: 4rem;
+  }
+  .experience-title {
+    margin-bottom: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .about-img {
+    height: 275px;
+    width: 275px;
+  }
+  #projects {
+    height: max-content;
+    margin-bottom: 4rem;
+  }
+  .project-container {
+    flex-direction: column;
+  }
+
+  .project-card {
+    width: 80%;
+  }
+  #footer {
+    margin: 0 5%;
+  }
+}
+
+/* All Small devices */
+@media screen and (max-width: 600px) {
+  section {
+    margin: 0 5%;
+    padding: 0;
+  }
+  #hero-section {
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .hero-img {
+    width: auto;
+    height: 50vw;
+    margin: 0 0 2rem 0;
+  }
+  .hero-details-title {
+    font-size: 1.8rem;
+  }
+  .hero-details-p2 {
+    font-size: 1.2rem;
+  }
+  .btn {
+    padding: 0.8rem;
+  }
+  .about-title h1 {
+    font-size: 2rem;
+  }
+  .about-container {
+    height: fit-content;
+    flex-direction: column;
+    gap: 0;
+  }
+  .about-img {
+    height: 45vw;
+    width: auto;
+  }
+  .details-info p {
+    text-align: justify;
+  }
+  .experience-title {
+    margin-bottom: 2rem;
+  }
+  .experience-title h1 {
+    font-size: 2rem;
+  }
+  .experience-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .experience-box-title h2 {
+    font-size: 1.4rem;
+  }
+  .project-card {
+    width: unset;
+  }
+  #footer {
+    margin: 0 5%;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+  .footer-social {
+    flex-direction: column;
+  }
+  .footer-social a {
+    font-size: 1rem;
+  }
+}
