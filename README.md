@@ -1,5 +1,4 @@
-# Portfolio
-Personal portfolio website built using HTML, CSS, and JavaScript.
+# Personal Portfolio Website
 
 A modern and responsive personal portfolio website built using **HTML, CSS, JavaScript**, and **Bootstrap**.  
 This portfolio showcases my front-end development skills, services, and projects.
@@ -30,7 +29,7 @@ This portfolio showcases my front-end development skills, services, and projects
 ## 📬 Contact
 If you want to work with me or hire me for your project:
 
-**Email:** maksudurrhmn2001@gmail.com 
+**Email:** maksudurrhmn2001@gmail.com  
 **Fiverr:** https://www.fiverr.com/yourusername  
 **GitHub:** https://github.com/maksudurrhmn  
 
