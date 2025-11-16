@@ -62,6 +62,17 @@
   #footer {
     margin: 0 5%;
   }
+  .nav-links ul {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+  .footer-social {
+    flex-direction: column;
+  }
+  .footer-social a {
+    font-size: 1rem;
+  }
 }
 
 /* All Small devices */
@@ -122,16 +133,5 @@
   }
   #footer {
     margin: 0 5%;
-  }
-  .nav-links ul {
-    flex-direction: column;
-    gap: 2rem;
-    font-size: 1.5rem;
-  }
-  .footer-social {
-    flex-direction: column;
-  }
-  .footer-social a {
-    font-size: 1rem;
   }
 }
