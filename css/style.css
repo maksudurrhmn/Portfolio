@@ -28,6 +28,12 @@ p {
 a {
   text-decoration: none;
 }
+.section-title {
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 3rem;
+}
 
 /* Animation */
 .animation {
@@ -265,13 +271,6 @@ a {
 #about {
   position: relative;
 }
-.about-title p {
-  text-align: center;
-}
-.about-title h1 {
-  font-size: 3rem;
-  text-align: center;
-}
 .about-container {
   display: flex;
   align-items: center;
@@ -324,13 +323,6 @@ a {
 #experience {
   position: relative;
 }
-.experience-title p {
-  text-align: center;
-}
-.experience-title h1 {
-  text-align: center;
-  font-size: 3rem;
-}
 .experience-container {
   display: flex;
   justify-content: center;
@@ -372,9 +364,6 @@ a {
 #projects {
   position: relative;
   text-align: center;
-}
-.project-title h1 {
-  font-size: 3rem;
 }
 .project-container {
   display: flex;
@@ -421,12 +410,6 @@ a {
 }
 
 /* Contaact section */
-.contact-title {
-  text-align: center;
-}
-.contact-title h2 {
-  font-size: 3rem;
-}
 .contact-content {
   display: flex;
   flex-direction: column;
@@ -465,6 +448,22 @@ input::placeholder {
 textarea::placeholder {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+}
+.contact-content button {
+  width: 10rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 1rem;
+  color: black;
+  border: 0.1rem solid rgb(53, 53, 53);
+  border-radius: 2rem;
+  background-color: transparent;
+}
+.contact-content button:hover {
+  color: white;
+  background-color: rgb(53, 53, 53);
+  cursor: pointer;
 }
 
 /* Footer Section */
