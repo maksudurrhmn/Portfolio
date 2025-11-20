@@ -72,6 +72,7 @@
   }
   .footer-social a {
     font-size: 1rem;
+    width: max-content;
   }
 }
 
