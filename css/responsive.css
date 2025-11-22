@@ -92,7 +92,9 @@
     padding-top: 0;
     margin: 0;
   }
-
+  .section-title h2 {
+    font-size: 2rem;
+  }
   .hero-img {
     width: auto;
     height: 50vw;
@@ -107,23 +109,17 @@
   .btn {
     padding: 0.8rem;
   }
-  .about-title h1 {
-    font-size: 2rem;
-  }
   .about-container {
     height: fit-content;
     flex-direction: column;
     gap: 0;
   }
+  .details {
+    width: 350px;
+  }
   .about-img {
     height: 45vw;
     width: auto;
-  }
-  .experience-title {
-    margin-bottom: 2rem;
-  }
-  .experience-title h1 {
-    font-size: 2rem;
   }
   .experience-box-title h2 {
     font-size: 1.4rem;
