@@ -314,7 +314,7 @@ a {
   height: 2rem;
   position: absolute;
   right: -5rem;
-  bottom: 2.5rem;
+  bottom: 5rem;
   cursor: pointer;
 }
 
@@ -420,7 +420,10 @@ a {
 .project-card h2 {
   font-size: 1.6rem;
   font-weight: 600;
-  margin-block: 1rem;
+  margin-top: 1rem;
+}
+.project-card p {
+  margin-bottom: 1rem;
 }
 .card-btn {
   display: flex;

@@ -117,7 +117,13 @@
     gap: 0;
   }
   .details {
-    width: 350px;
+    width: 330px;
+  }
+  .details-info {
+    text-align: center;
+  }
+  .footer-social {
+    padding: 1rem;
   }
   .about-img {
     height: 45vw;
@@ -132,7 +138,13 @@
   #footer {
     margin: 0 5%;
   }
+  .nav-links ul {
+    font-size: 1.2rem;
+  }
+  .footer-social {
+    padding: 1rem;
+  }
   .footer-social a {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
