@@ -27,7 +27,7 @@
   }
   #about {
     height: max-content;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
   .hero-img {
     width: auto;
@@ -36,7 +36,7 @@
   }
   #experience {
     height: max-content;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
   .experience-container {
     margin-top: 2rem;
@@ -56,14 +56,14 @@
   }
   #service {
     height: max-content;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
   .service-container {
     margin-top: 2rem;
   }
   #projects {
     height: max-content;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
   .project-container {
     margin-top: 2rem;
@@ -126,7 +126,13 @@
   .experience-box-title h2 {
     font-size: 1.4rem;
   }
+  .experience-box {
+    width: 350px;
+  }
   #footer {
     margin: 0 5%;
+  }
+  .footer-social a {
+    font-size: 0.8rem;
   }
 }
