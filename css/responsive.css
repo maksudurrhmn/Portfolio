@@ -27,7 +27,7 @@
   }
   #about {
     height: max-content;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
   }
   .hero-img {
     width: auto;
@@ -36,10 +36,13 @@
   }
   #experience {
     height: max-content;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
   }
   .experience-container {
     margin-top: 2rem;
+  }
+  .experience-box {
+    width: 500px;
   }
   .experience-title {
     margin-bottom: 2rem;
@@ -53,14 +56,14 @@
   }
   #service {
     height: max-content;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
   }
   .service-container {
     margin-top: 2rem;
   }
   #projects {
     height: max-content;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
   }
   .project-container {
     margin-top: 2rem;
@@ -77,7 +80,6 @@
     flex-direction: column;
   }
   .footer-social a {
-    font-size: 1rem;
     width: max-content;
   }
 }
