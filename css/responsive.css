@@ -1,5 +1,5 @@
 /* Responsive */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
   section {
     margin: 0 5%;
     padding: 0;
@@ -38,6 +38,9 @@
     height: max-content;
     margin-bottom: 4rem;
   }
+  .experience-container {
+    margin-top: 2rem;
+  }
   .experience-title {
     margin-bottom: 2rem;
   }
@@ -48,16 +51,19 @@
     height: 275px;
     width: 275px;
   }
+  #service {
+    height: max-content;
+    margin-bottom: 4rem;
+  }
+  .service-container {
+    margin-top: 2rem;
+  }
   #projects {
     height: max-content;
     margin-bottom: 4rem;
   }
   .project-container {
-    flex-direction: column;
-  }
-
-  .project-card {
-    width: 80%;
+    margin-top: 2rem;
   }
   #footer {
     margin: 0 5%;
@@ -119,15 +125,8 @@
   .experience-title h1 {
     font-size: 2rem;
   }
-  .experience-container {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
   .experience-box-title h2 {
     font-size: 1.4rem;
-  }
-  .project-card {
-    width: unset;
   }
   #footer {
     margin: 0 5%;
