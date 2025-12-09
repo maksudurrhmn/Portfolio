@@ -242,8 +242,11 @@ a {
 .hero-socials i:nth-child(2):hover {
   color: #ee2a7b;
 }
-.hero-socials i:last-child:hover {
+.hero-socials i:nth-child(3):hover {
   color: #4183c4;
+}
+.hero-socials i:last-child:hover {
+  color: #738adb;
 }
 /* Typing Animation */
 @keyframes typing {
@@ -527,12 +530,6 @@ textarea::placeholder {
   font-size: 1.2rem;
   color: black;
   border-bottom: 1px solid transparent;
-}
-.footer-social a:last-child {
-  font-weight: 600;
-}
-.footer-social a span {
-  color: green;
 }
 .footer-social a i {
   font-size: 1.5rem;
