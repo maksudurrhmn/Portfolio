@@ -30,7 +30,7 @@ This portfolio showcases my front-end development skills, services, and projects
 If you want to work with me or hire me for your project:
 
 **Email:** maksudurrhmn2001@gmail.com  
-**Linkedin:** https://www.linkedin.com/maksudurrhmn  
+**Linkedin:** https://www.linkedin.com/in/maksudurrhmn  
 **GitHub:** https://github.com/maksudurrhmn  
 
 ---
