@@ -15,7 +15,7 @@ This portfolio showcases my front-end development skills, services, and projects
 - HTML5  
 - CSS3  
 - JavaScript  
-- Bootstrap  
+- Tailwind CSS
 - Git & GitHub  
 
 ## 📂 Sections Included
@@ -30,7 +30,7 @@ This portfolio showcases my front-end development skills, services, and projects
 If you want to work with me or hire me for your project:
 
 **Email:** maksudurrhmn2001@gmail.com  
-**Fiverr:** https://www.fiverr.com/maksudurrhmn  
+**Linkedin:** https://www.linkedin.com/maksudurrhmn  
 **GitHub:** https://github.com/maksudurrhmn  
 
 ---
