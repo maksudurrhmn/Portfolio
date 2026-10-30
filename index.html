@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Basic Meta Tags -->
@@ -12,129 +12,168 @@
     <meta name="robots" content="index, follow" />
 
     <!-- Title -->
-    <title>Maksudur Rahman | Web Developer & Designer</title>
+    <title>Maksudur Rahman | FullStack Web Developer</title>
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#0a74da" />
 
     <!-- Open Graph / Social Sharing -->
-    <meta property="og:title" content="Maksudur Rahman | Web Developer & Designer" />
+    <meta property="og:title" content="Maksudur Rahman | FullStack Web Developer" />
     <meta
       property="og:description"
-      content="Check out my portfolio of web development and design projects."
+      content="Check out my portfolio of full-stack web development projects."
     />
     <meta
       property="og:image"
-      content="https://maksudurrhmn-portfolio.vercel.app/images/og-image.png"
+      content="https://maksudurrhmn-portfolio.vercel.app/src/images/og-image.png"
     />
     <meta property="og:url" content="https://maksudurrhmn-portfolio.vercel.app" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Maksudur Rahman | Web Developer & Designer" />
+    <meta name="twitter:title" content="Maksudur Rahman | FullStack Web Developer" />
     <meta
       name="twitter:description"
-      content="Explore my web development portfolio showcasing my work in frontend and design."
+      content="Explore my full-stack web development portfolio showcasing my work in frontend and backend development."
     />
     <meta
       name="twitter:image"
-      content="https://maksudurrhmn-portfolio.vercel.app/images/og-image.png"
+      content="https://maksudurrhmn-portfolio.vercel.app/src/images/og-image.png"
     />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://maksudurrhmn-portfolio.vercel.app/" />
 
     <!-- Fevicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="src/favicon/site.webmanifest" />
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Tailwind CSS -->
+    <link href="src/css/tailwind.css" rel="stylesheet" />
 
     <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="font-poppins">
     <!-- Header section start -->
-    <header id="header-section" class="animation">
-      <nav class="navbar">
-        <div class="nav-logo"><a href="#">maksudurrhmn</a></div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <nav id="hamburger-navbar">
-        <div class="hamburger-nav">
-          <div class="hamburger-logo"><a href="#">m.rhmn</a></div>
-          <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="menu-links">
-              <ul>
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li>
-                  <a href="#experience" onclick="toggleMenu()">Skills</a>
-                </li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#service" onclick="toggleMenu()">Service</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-              </ul>
-            </div>
+    <header class="animation relative z-10">
+      <nav class="py-8 md:py-12">
+        <div class="container mx-auto px-5 flex justify-between items-center">
+          <!-- Logo -->
+          <a href="#" class="text-lg md:text-3xl font-semibold"> maksudurrhmn </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:block">
+            <ul class="flex items-center space-x-16 text-2xl">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#service" class="nav-link">Service</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
           </div>
+
+          <!-- Mobile Hamburger Button -->
+          <button
+            id="menu-toggle"
+            class="md:hidden"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              id="menu-open-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <svg
+              id="menu-close-icon"
+              class="hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden px-5 pt-6 absolute right-20">
+          <ul class="flex flex-col gap-5 text-lg">
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#service" class="mobile-nav-link">Service</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          </ul>
         </div>
       </nav>
     </header>
     <!-- Header section ends -->
 
     <!-- Hero section start -->
-    <section id="hero-section" class="animation">
-      <div class="hero-container">
-        <div class="hero-img">
-          <img src="images/profile_pic.jpg" alt="" />
+    <section class="animation py-50">
+      <div class="container mx-auto flex justify-center items-center gap-16">
+        <div class="w-100 h-100 overflow-hidden rounded-full">
+          <img class="w-full h-full" src="src/images/profile_pic.jpg" alt="Image" />
         </div>
-        <div class="hero-details">
-          <p class="hero-details-p1">Hello, I'm</p>
-          <h1 class="hero-details-title">Maksudur Rahman</h1>
-          <div class="typewriter">
-            <p class="hero-details-p2">Front-end Developer</p>
+        <div class="flex flex-col items-center justify-center gap-2">
+          <p class="text-gray-500 font-semibold">Hello, I'm</p>
+          <h1 class="text-4xl font-bold">Maksudur Rahman</h1>
+          <div>
+            <p class="typewriter mx-auto text-2xl text-gray-500 font-semibold">
+              Full Stack Developer
+            </p>
           </div>
-          <div class="hero-btn">
-            <a class="btn-1-clr btn" href="#projects">View My Work</a>
-            <a class="btn-2-clr btn" href="#contact">Contact Info</a>
+          <div class="py-8">
+            <a
+              class="p-4 w-42 border border-gray-500 rounded-4xl font-semibold hover:bg-black hover:text-white mr-2 transition-effect"
+              href="#projects"
+              >View My Work</a
+            >
+            <a
+              class="p-4 w-42 border border-gray-500 rounded-4xl font-semibold bg-gray-700 text-white hover:bg-black transition-effect"
+              href="#contact"
+              >Contact Info</a
+            >
           </div>
-          <div class="hero-socials">
+          <div class="flex items-center justify-center gap-2">
             <i
-              class="fa-brands fa-facebook"
+              class="fa-brands fa-facebook text-3xl transition-effect cursor-pointer hover:text-blue-500"
               onclick="window.open('http://www.facebook.com/profile.php?id=61580087361506')"
             ></i>
             <i
-              class="fa-brands fa-instagram"
+              class="fa-brands fa-instagram text-3xl transition-effect cursor-pointer hover:text-orange-500"
               onclick="window.open('https://www.instagram.com/maksudurrhmn/')"
             ></i>
             <i
-              class="fa-brands fa-github"
+              class="fa-brands fa-github text-3xl transition-effect cursor-pointer hover:text-blue-500"
               onclick="window.open('https://github.com/maksudurrhmn')"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin text-3xl transition-effect cursor-pointer hover:text-blue-500"
+              onclick="window.open('https://www.linkedin.com/in/maksudurrhmn/')"
             ></i>
           </div>
         </div>
@@ -143,288 +182,463 @@
     <!-- Hero section ends -->
 
     <!-- About section start -->
-    <section id="about" class="animation">
-      <div class="section-title">
-        <p>Get To Know More</p>
-        <h2>About Me</h2>
-      </div>
-      <div class="about-container">
-        <div class="about-img">
-          <img src="images/about-pic.png" alt="about me picture" />
+    <section id="about" class="animation min-h-dvh">
+      <div class="container mx-auto h-full">
+        <div class="flex flex-col justify-center items-center">
+          <p class="text-gray-500">Get To Know More</p>
+          <h2 class="text-5xl font-bold mt-4">About Me</h2>
         </div>
-        <div class="about-details">
-          <div class="details-contenter">
-            <div class="details">
-              <img src="images/experience.png" alt="" />
-              <h3>Experience</h3>
-              <p>
-                1+ years<br />
-                Front-end Development
-              </p>
+        <div class="flex justify-center items-center gap-16 h-full mt-36">
+          <div class="h-100 w-300">
+            <img class="h-full w-full" src="src/images/about-pic.png" alt="about me picture" />
+          </div>
+          <div class="">
+            <div class="flex gap-12">
+              <div
+                class="p-12 w-1/2 h-70 border rounded-3xl border-black flex flex-col justify-center items-center gap-0.5"
+              >
+                <img class="h-12 w-12" src="src/images/experience.png" alt="" />
+                <h3 class="text-2xl font-semibold">Experience</h3>
+                <p class="text-gray-500">Full Stack Development</p>
+                <p class="text-gray-500">Since 2025</p>
+              </div>
+              <div
+                class="p-12 w-1/2 h-70 border rounded-3xl border-black flex flex-col justify-center items-center gap-0.5"
+              >
+                <img class="h-12 w-12" src="src/images/education.png" alt="" />
+                <h3 class="text-2xl font-semibold">Education</h3>
+                <p class="text-gray-500">Diploma in Electrical Engineering</p>
+                <p class="text-gray-500">National Polytechnic Institute, Dhaka</p>
+                <span class="text-gray-500">2020 - 2024</span>
+              </div>
             </div>
-            <div class="details">
-              <img src="images/education.png" alt="" />
-              <h3>Education</h3>
-              <p>
-                Diploma in Engineering (Graduated)<br />
-                B.Sc. Bachelors Degree (Student)
+            <div class="">
+              <p class="text-gray-500 mt-8">
+                I'm a Full Stack Developer passionate about building modern, responsive, and
+                user-friendly web applications. I work with JavaScript, TypeScript, React, Next.js,
+                and Tailwind CSS to create clean and engaging digital experiences. I focus on
+                writing maintainable code, solving problems, and delivering quality results. I'm
+                continuously learning and expanding my skills to build complete web applications and
+                grow as a developer.
               </p>
             </div>
           </div>
-          <div class="details-info">
-            <p>
-              I’m a Front-End Developer specializing in turning Figma designs into fully responsive,
-              modern websites using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS. I build
-              clean, fast-loading pages, including landing pages, that work perfectly on all
-              devices. Focused on responsive design and user experience, I deliver websites that
-              look great and perform smoothly. I’m also growing into a full-stack developer,
-              continually expanding my skills to offer more complete web solutions.
-            </p>
-          </div>
         </div>
       </div>
-      <img src="images/arrow.png" alt="" class="arrow" onclick="location.href='#experience'" />
+      <img
+        src="src/images/arrow.png"
+        alt=""
+        class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden md:block"
+        onclick="location.href = '#skills'"
+      />
     </section>
     <!-- About section ends -->
 
-    <!-- Experience section start -->
-    <section id="experience" class="animation">
-      <div class="section-title">
-        <p>Explore My Skills</p>
-        <h2>Skills</h2>
-      </div>
-      <div class="experience-container">
-        <div class="experience-box">
-          <div class="experience-box-title">
-            <h2>My Current Skills :</h2>
-          </div>
-          <div class="article-box">
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>HTML</h3>
-                <p>Expert</p>
-              </div>
-            </article>
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>CSS</h3>
-                <p>Expert</p>
-              </div>
-            </article>
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Expert</p>
-              </div>
-            </article>
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>Bootstrap</h3>
-                <p>Expert</p>
-              </div>
-            </article>
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>Tailwind CSS</h3>
-                <p>Expert</p>
-              </div>
-            </article>
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>Git&Github</h3>
-                <p>Expert</p>
-              </div>
-            </article>
+    <!-- Skills section start -->
+    <section id="skills" class="animation min-h-dvh">
+      <div class="container mx-auto">
+        <div class="flex flex-col justify-center items-center">
+          <p class="text-gray-500">Explore My Skills</p>
+          <h2 class="text-5xl font-bold mt-4">Skills</h2>
+        </div>
+        <div class="flex justify-center items-center h-full mt-20">
+          <div class="border border-black rounded-2xl w-full p-12">
+            <div class="flex justify-center items-center mb-8">
+              <h2 class="text-3xl font-semibold text-gray-500">My Tech Stack</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>HTML <i class="fa-brands fa-html5 text-xl"></i></h3>
+                  <p>HyperText Markup Language</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>CSS <i class="fa-brands fa-css text-xl"></i></h3>
+                  <p>Cascading Style Sheets</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>JavaScript <i class="fa-brands fa-js text-xl"></i></h3>
+                  <p>Programming Language</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>TypeScript <i class="fa-brands fa-typescript text-xl"></i></h3>
+                  <p>Programming Language</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>Bootstrap <i class="fa-brands fa-bootstrap text-xl"></i></h3>
+                  <p>Web Development Framework</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>Tailwind CSS <i class="fa-brands fa-tailwind-css text-xl"></i></h3>
+                  <p>Utility-First CSS Framework</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>React.js <i class="fa-brands fa-react text-xl"></i></h3>
+                  <p>JavaScript Library</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>Next.js <i class="fa-brands fa-react text-xl"></i></h3>
+                  <p>React Framework</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>Node.js <i class="fa-brands fa-node text-xl"></i></h3>
+                  <p>JavaScript Runtime Environment</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>Express.js <i class="fa-brands fa-node text-xl"></i></h3>
+                  <p>JavaScript Web Framework</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>BetterAuth <i class="fa-solid fa-lock text-xl"></i></h3>
+                  <p>Authentication Solution</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>MongoDB <i class="fa-brands fa-mdb text-xl"></i></h3>
+                  <p>Database Management System</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>Git <i class="fa-brands fa-git-alt text-xl"></i></h3>
+                  <p>Version Control System</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>GitHub <i class="fa-brands fa-github text-xl"></i></h3>
+                  <p>Version Control Platform</p>
+                </div>
+              </article>
+              <article class="flex gap-2">
+                <img class="w-8 h-8" src="src/images/checkmark.png" alt="" />
+                <div>
+                  <h3>Vercel <i class="fa-solid fa-cloud text-xl"></i></h3>
+                  <p>Deployment Platform</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
-        <div class="experience-box">
-          <div class="experience-box-title">
-            <h2>Currently Learning :</h2>
-          </div>
-          <div class="article-box">
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>React.js</h3>
-                <p>Learning</p>
-              </div>
-            </article>
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>Node.js</h3>
-                <p>Learning</p>
-              </div>
-            </article>
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>MongoDB</h3>
-                <p>Learning</p>
-              </div>
-            </article>
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>MySQL</h3>
-                <p>Learning</p>
-              </div>
-            </article>
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>WordPress</h3>
-                <p>Learning</p>
-              </div>
-            </article>
-            <article>
-              <img src="images/checkmark.png" alt="" />
-              <div>
-                <h3>Others Stuff</h3>
-                <p>Learning</p>
-              </div>
-            </article>
-          </div>
-        </div>
       </div>
-      <img src="images/arrow.png" alt="" class="arrow" onclick="location.href='#service'" />
+      <img
+        src="src/images/arrow.png"
+        alt=""
+        class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden md:block"
+        onclick="location.href = '#service'"
+      />
     </section>
-    <!-- Experience section ends -->
+    <!-- Skills section ends -->
 
     <!-- Service section start -->
-    <section id="service" class="animation">
-      <div class="section-title">
-        <p>What I Offer</p>
-        <h2>My Services</h2>
+    <section id="service" class="animation min-h-dvh">
+     <div class="container mx-auto">
+       <div class="flex flex-col justify-center items-center">
+        <p class="text-gray-500">What I Offer</p>
+        <h2 class="text-5xl font-bold mt-4">My Services</h2>
       </div>
-      <div class="service-container">
-        <div class="service-card">
-          <i class="fa-solid fa-code"></i>
-          <h4>Figma/PSD To HTML</h4>
-          <p>
-            Turn your Figma or Adobe XD designs into responsive, pixel-perfect HTML/CSS websites
-            using Bootstrap or Tailwind.
+      <div class="grid grid-cols-2 gap-12 mt-20">
+        <div class="border border-black rounded-2xl flex justify-center items-center flex-col p-8 gap-0.5 ">
+         <i class="fa-solid fa-desktop text-6xl mb-4"></i>
+          <h4 class="font-bold text-xl">Web Development</h4>
+          <p class="text-gray-500 text-center">
+           Building modern, responsive, and user-friendly websites with clean, maintainable code. Focusing on creating functional web experiences that combine performance, accessibility, and visual appeal.
           </p>
         </div>
-        <div class="service-card">
-          <i class="fa-solid fa-mobile"></i>
-          <h4>Responsive Website Development</h4>
-          <p>Build modern, mobile-friendly websites that work seamlessly on all devices.</p>
+       <div class="border border-black rounded-2xl flex justify-center items-center flex-col p-8 gap-0.5 
+       ">
+         <i class="fa-solid fa-palette text-6xl mb-4"></i>
+           <h4 class="font-bold text-xl">UI Implementation</h4>
+         <p class="text-gray-500 text-center">Transforming design concepts into clean, interactive, and user-friendly web interfaces. Paying attention to layout, typography, spacing, and details to create a consistent and engaging user experience.</p>
         </div>
-        <div class="service-card">
-          <i class="fa-brands fa-js"></i>
-          <h4>Front-End Development</h4>
-          <p>
-            Implement interactive features with JavaScript, like sliders, forms, and dynamic
-            content.
+     <div class="border border-black rounded-2xl flex justify-center items-center flex-col p-8 gap-0.5 ">
+       <i class="fa-solid fa-mobile text-6xl mb-4"></i>
+          <h4 class="font-bold text-xl">Responsive Design</h4>
+         <p class="text-gray-500 text-center">
+          Creating responsive and flexible layouts that provide a consistent browsing experience across mobile, tablet, and desktop devices. Ensuring that every element adapts smoothly to different screen sizes while maintaining usability, accessibility, and visual consistency.
           </p>
         </div>
-        <div class="service-card">
-          <i class="fa-brands fa-chrome"></i>
-          <h4>Small Projects</h4>
-          <p>
-            Design and code landing pages, portfolios, and single-page websites quickly and
-            efficiently.
+       <div class="border border-black rounded-2xl flex justify-center items-center flex-col p-8 gap-0.5">
+         <i class="fa-solid fa-database text-6xl mb-4"></i>
+         <h4 class="font-bold text-xl">Full Stack Development</h4>
+       <p class="text-gray-500 text-center">
+Developing complete web applications by combining intuitive frontend interfaces with reliable backend functionality. Focusing on building scalable, efficient, and user-focused solutions while continuously improving across modern web technologies.
           </p>
         </div>
       </div>
-      <img src="images/arrow.png" alt="" class="arrow" onclick="location.href='#projects'" />
+      <img
+        src="src/images/arrow.png"
+        alt=""
+        class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden md:block"
+        onclick="location.href = '#projects'"
+      />
     </section>
     <!-- Service section ends -->
 
     <!-- Projects section starts -->
-    <section id="projects" class="animation">
-      <div class="section-title">
-        <p>Browse My Recent</p>
-        <h2>Projects</h2>
+   
+<section id="projects" class="animation relative min-h-dvh">
+  <div class="container mx-auto">
+    <!-- Section Heading -->
+    <div class="flex flex-col items-center justify-center">
+      <p class="text-gray-500">Browse My Recent</p>
+      <h2 class="mt-4 text-5xl font-bold">Projects</h2>
+    </div>
+    <!-- Carousel -->
+    <div class="relative mx-auto max-w-7xl mt-16">
+
+      <!-- Previous Button -->
+      <button
+        id="prev-project"
+        class="absolute -left-4 top-1/2 z-10 -translate-y-1/2 rounded-full border border-gray-300 bg-white p-3 shadow-md transition hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-30 md:-left-6"
+        aria-label="Previous projects"
+      >
+       <i class="fa-solid fa-angle-left"></i>
+      </button>
+
+      <!-- Carousel Viewport -->
+      <div id="project-viewport" class="overflow-hidden">
+        <div id="project-track" class="flex transition-transform duration-500 ease-in-out">
+
+          <!-- Project 1 -->
+          <div class="project-slide w-full shrink-0 px-3 sm:w-1/2 lg:w-1/3">
+ <div class="flex h-full flex-col items-center gap-5 rounded-4xl border border-black p-8">
+              <img
+                class=" w-100 h-100 rounded-xl"
+                src="src/images/BazarDor.png"
+                alt="BazarDor project preview"
+              />
+              <h3 class="text-2xl font-semibold">BazarDor</h3>
+              <div class="flex gap-3">
+                <a href="https://github.com/maksudurrhmn/BazarDor-PH.git"
+                  target="_blank" rel="noopener noreferrer"
+                  class="rounded-full border border-black px-5 py-2 transition-effect hover:bg-gray-900 hover:text-white">
+                  Github
+                </a>
+                <a href="https://bazardor-ph.vercel.app"
+                  target="_blank" rel="noopener noreferrer"
+                  class="rounded-full border border-black px-5 py-2 transition-effect hover:bg-gray-900 hover:text-white">
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-slide w-full shrink-0 px-3 sm:w-1/2 lg:w-1/3">
+ <div class="flex h-full flex-col items-center gap-5 rounded-4xl border border-black p-8">
+              <img
+                class=" w-100 h-100 rounded-xl"
+                src="src/images/Fitlog.png"
+                alt="Fitlog project preview"
+              />
+              <h3 class="text-2xl font-semibold">Fitlog</h3>
+              <div class="flex gap-3">
+                <a href="https://github.com/maksudurrhmn/Fitlog-PH.git"
+                  target="_blank" rel="noopener noreferrer"
+                  class="rounded-full border border-black px-5 py-2 transition-effect hover:bg-gray-900 hover:text-white">
+                  Github
+                </a>
+                <a href="https://fitlogph.vercel.app"
+                  target="_blank" rel="noopener noreferrer"
+                  class="rounded-full border border-black px-5 py-2 transition-effect hover:bg-gray-900 hover:text-white">
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-slide w-full shrink-0 px-3 sm:w-1/2 lg:w-1/3">
+            <div class="flex h-full flex-col items-center gap-5 rounded-4xl border border-black p-8">
+              <img
+               class=" w-100 h-100 rounded-xl"
+                src="src/images/DevStack.png"
+                alt="DevStack project preview"
+              />
+              <h3 class="text-2xl font-semibold">DevStack</h3>
+              <div class="flex gap-3">
+                <a href="https://github.com/maksudurrhmn/DevStack-PH.git"
+                  target="_blank" rel="noopener noreferrer"
+                  class="rounded-full border border-black px-5 py-2 transition-effect hover:bg-gray-900 hover:text-white">
+                  Github
+                </a>
+                <a href="https://devstackph.vercel.app"
+                  target="_blank" rel="noopener noreferrer"
+                  class="rounded-full border border-black px-5 py-2 transition-effect hover:bg-gray-900 hover:text-white">
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+            <!-- Project 4 -->
+           <div class="project-slide w-full shrink-0 px-3 sm:w-1/2 lg:w-1/3">
+             <div class="flex h-full flex-col items-center gap-5 rounded-4xl border border-black p-8">
+              <img
+                class=" w-100 h-100 rounded-xl"
+                src="src/images/DevConf.png"
+                alt="DevConf project preview"
+              />
+              <h3 class="text-2xl font-semibold">DevConf</h3>
+              <div class="flex gap-3">
+                <a href="https://github.com/maksudurrhmn/DevConf2026-PH.git"
+                  target="_blank" rel="noopener noreferrer"
+                  class="rounded-full border border-black px-5 py-2 transition-effect hover:bg-gray-900 hover:text-white">
+                  Github
+                </a>
+                <a href="https://maksudurrhmn.github.io/DevConf2026-PH/"
+                  target="_blank" rel="noopener noreferrer"
+                  class="rounded-full border border-black px-5 py-2 transition-effect hover:bg-gray-900 hover:text-white">
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+            <!-- Project 5 -->
+          <div class="project-slide w-full shrink-0 px-3 sm:w-1/2 lg:w-1/3">
+             <div class="flex h-full flex-col items-center gap-5 rounded-4xl border border-black p-8">
+              <img
+                class=" w-100 h-100 rounded-xl"
+                src="src/images/Sundown-Studio.png"
+                alt="Sundown Studio project preview"
+              />
+              <h3 class="text-2xl font-semibold">Sundown Studio</h3>
+              <div class="flex gap-3">
+                <a href="https://github.com/maksudurrhmn/Sundown-Studio.git"
+                  target="_blank" rel="noopener noreferrer"
+                  class="rounded-full border border-black px-5 py-2 transition-effect hover:bg-gray-900 hover:text-white">
+                  Github
+                </a>
+                <a href="https://sundownstudio-web.vercel.app/"
+                  target="_blank" rel="noopener noreferrer"
+                  class="rounded-full border border-black px-5 py-2 transition-effect hover:bg-gray-900 hover:text-white">
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div class="project-container">
-        <div class="project-card">
-          <img src="images/project-1.png" alt="" />
-          <h2>Sundown Studio Clone</h2>
-          <div class="card-btn">
-            <a href="https://github.com/maksudurrhmn/Sundown-Studio.git">Github</a>
-            <a href="https://sundownstudio-web.vercel.app">Live Demo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="images/project-2.png" alt="" />
-          <h2>Feane Template Clone</h2>
-          <div class="card-btn">
-            <a href="https://github.com/maksudurrhmn/Feane-Template-Clone.git">Github</a>
-            <a href="https://feane-template.vercel.app/">Live Demo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="images/project-3.png" alt="" />
-          <h2>Simple ToDo List</h2>
-          <div class="card-btn">
-            <a href="https://github.com/maksudurrhmn/ToDo-List.git">Github</a>
-            <a href="https://maksudurrhmn-todolist.vercel.app">Live Demo</a>
-          </div>
-        </div>
-      </div>
-      <img src="images/arrow.png" alt="" class="arrow" onclick="location.href='#contact'" />
-    </section>
+
+      <!-- Next Button -->
+      <button
+        id="next-project"
+        class="absolute -right-4 top-1/2 z-10 -translate-y-1/2 rounded-full border border-gray-300 bg-white p-3 shadow-md transition hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-30 md:-right-6"
+        aria-label="Next projects"
+      >
+      <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <!-- Pagination Dots -->
+      <div id="project-dots" class="mt-8 flex justify-center gap-2"></div>
+
+    </div>
+  </div>
+
+   <img
+        src="src/images/arrow.png"
+        alt=""
+        class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden md:block"
+        onclick="location.href = '#contact'"
+      />
+</section>
+
     <!-- Projects section ends -->
 
     <!-- Contact section start -->
-    <section id="contact" class="animation">
-      <div class="section-title">
-        <p>Get in Touch</p>
-        <h2>Contact Me</h2>
-      </div>
-      <div class="contact-content">
-        <form action="https://formspree.io/f/xpwkknea" method="POST">
-          <input type="text" name="name" placeholder="Enter Your Name" required />
-          <input type="email" name="email" placeholder="Enter Your Email" required />
-          <input type="tel" name="phone" placeholder="Phone Number" required />
-          <textarea name="massage" placeholder="Your Massage" rows="8" required></textarea>
-          <button type="submit" href="#">Submit</button>
+    <section id="contact" class="animation min-h-dvh">
+     <div class="container mx-auto">
+       <div class="flex flex-col items-center justify-center">
+      <p class="text-gray-500">Get in Touch</p>
+      <h2 class="mt-4 text-5xl font-bold">Contact Me</h2>
+    </div>
+      <div class="flex flex-col justify-center items-center mt-20">
+        <form class="flex flex-col gap-12 justify-center items-center w-full" action="https://formspree.io/f/xpwkknea" method="POST">
+          <input class="border-l-4 border-b-4 border-black outline-0 w-[80%] p-4" type="text" name="name" placeholder="Enter Your Name" required />
+          <input  class="border-l-4 border-b-4 border-black outline-0 w-[80%] p-4" type="email" name="email" placeholder="Enter Your Email" required />
+          <input class="border-l-4 border-b-4 border-black outline-0 w-[80%] p-4" type="tel" name="phone" placeholder="Phone Number" required />
+          <textarea class="border-l-4 border-b-4 border-black outline-0 w-[80%] p-4" name="massage" placeholder="Your Massage" rows="8" required></textarea>
+          <button class="border border-black rounded-full py-4 w-40 transition-effect hover:bg-black hover:text-white font-semibold" type="submit" href="#">Submit</button>
         </form>
       </div>
+     </div>
     </section>
     <!-- Contact section ends -->
 
     <!-- Footer Section start -->
     <footer id="footer" class="animation">
-      <div class="footer-container">
-        <div class="footer-social">
-          <a href="mailto:maksudurrhmn2001@gmail.com"
-            ><i class="fa-solid fa-envelope"></i>maksudurrhmn2001@gmail.com</a
+      <div class="container mx-auto">
+        <div class="flex flex-col justify-center items-center gap-16 py-12 ">
+        <div class="border border-black rounded-full py-6 px-8 flex justify-center items-center gap-8">
+          <a class="text-xl transition-effect  border-b border-transparent hover:border-gray-500 hover:text-gray-500" href="mailto:maksudurrhmn2001@gmail.com"><i class="fa-solid fa-envelope mr-2"></i>Email</a>
+          <a class="text-xl transition-effect border-b border-transparent hover:border-gray-500 hover:text-gray-500" href="#" onclick="window.open('http://www.facebook.com/profile.php?id=61580087361506')"
+            ><i class="fa-brands fa-facebook mr-2"></i>Facebook</a
           >
-          <a href="#" onclick="window.open('http://www.facebook.com/profile.php?id=61580087361506')"
-            ><i class="fa-brands fa-facebook"></i>Facebook</a
+          <a class="text-xl transition-effect border-b border-transparent hover:text-gray-500 hover:border-gray-500" href="#" onclick="window.open('https://www.instagram.com/maksudurrhmn/')"
+            ><i class="fa-brands fa-instagram mr-2"></i>Instagram</a
           >
-          <a href="#" onclick="window.open('https://www.instagram.com/maksudurrhmn/')"
-            ><i class="fa-brands fa-instagram"></i>Instagram</a
+          <a class="text-xl transition-effect border-b border-transparent hover:text-gray-500 hover:border-gray-500" href="#" onclick="window.open('https://github.com/maksudurrhmn')"
+            ><i class="fa-brands fa-github mr-2"></i>Github</a
           >
-          <a href="#" onclick="window.open('https://github.com/maksudurrhmn')"
-            ><i class="fa-brands fa-github"></i>Github</a
+             <a class="text-xl transition-effect border-b border-transparent hover:text-gray-500 hover:border-gray-500" href="#" onclick="window.open('https://www.linkedin.com/in/maksudurrhmn/')"
+            ><i  class="fa-brands fa-linkedin mr-2"></i>Linkedin</a
           >
         </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <div class="">
+          <ul class="flex flex-col lg:flex-row items-center justify-center gap-8">
+            <li><a href="#about" class="nav-link text-2xl">About</a></li>
+            <li><a href="#experience" class="nav-link text-2xl">Skills</a></li>
+            <li><a href="#projects" class="nav-link text-2xl">Projects</a></li>
+            <li><a href="#service" class="nav-link text-2xl">Service</a></li>
+            <li><a href="#contact" class="nav-link text-2xl">Contact</a></li>
           </ul>
         </div>
-        <p>Copyright © 2025 Maksudur Rahman. All Rights Reserved.</p>
+        <p class="text-gray-500 text-lg">Copyright © 2026 Maksudur Rahman. All Rights Reserved.</p>
+      </div>
       </div>
     </footer>
     <!-- Footer Section ends -->
 
     <!-- Main script JS -->
-    <script src="js/script.js"></script>
+    <script src="src/js/script.js"></script>
 
     <!-- Vercel Web Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>

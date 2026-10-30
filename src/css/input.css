@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+@layer components {
+  .nav-link {
+    @apply pb-1 transition-all duration-300 ease-in border-b-2 border-transparent hover:text-gray-500 hover:border-gray-500;
+  }
+
+  .mobile-nav-link {
+    @apply block transition-colors duration-300 hover:text-gray-500;
+  }
+
+  .transition-effect {
+    @apply transition-all duration-300 ease-in;
+  }
+}
+
+/* Animation */
+.animation {
+  opacity: 0;
+  translate: -50%;
+  transition: all 0.6s ease;
+}
+.animation.show {
+  opacity: 1;
+  translate: 0;
+}
+
+/* Typing Animation */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgb(85, 85, 85);
+  animation:
+    typing 5s steps(22) infinite,
+    blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 70%;
+  }
+  75% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
