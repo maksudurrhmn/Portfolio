@@ -20,6 +20,10 @@
   }
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 /* Animation */
 .animation {
   opacity: 0;
