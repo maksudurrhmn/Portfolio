@@ -62,14 +62,14 @@
   </head>
   <body class="font-poppins">
     <!-- Header section start -->
-    <header class="animation relative z-10">
+    <header class="animation relative z-999">
       <nav class="py-8 md:py-12">
         <div class="container mx-auto px-5 flex justify-between items-center">
           <!-- Logo -->
           <a href="#" class="text-lg md:text-3xl font-semibold"> maksudurrhmn </a>
 
           <!-- Desktop Navigation -->
-          <div class="hidden md:block">
+          <div class="hidden lg:block">
             <ul class="flex items-center space-x-16 text-2xl">
               <li><a href="#about" class="nav-link">About</a></li>
               <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -82,7 +82,7 @@
           <!-- Mobile Hamburger Button -->
           <button
             id="menu-toggle"
-            class="md:hidden"
+            class="lg:hidden"
             aria-label="Open navigation menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
@@ -119,8 +119,8 @@
         </div>
 
         <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden px-5 pt-6 absolute right-20">
-          <ul class="flex flex-col gap-5 text-lg">
+        <div id="mobile-menu" class="hidden lg:hidden px-5 pt-6 absolute right-20 z-999">
+          <ul class="flex flex-col gap-5 text-lg z-10">
             <li><a href="#about" class="mobile-nav-link">About</a></li>
             <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
             <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
@@ -133,27 +133,31 @@
     <!-- Header section ends -->
 
     <!-- Hero section start -->
-    <section class="animation min-h-[calc(100dvh-80px)] flex justify-center items-center">
-      <div class="container mx-auto flex justify-center items-center gap-16">
-        <div class="w-100 h-100 overflow-hidden rounded-full">
-          <img class="w-full h-full" src="src/images/profile_pic.jpg" alt="Image" />
+    <section class="animation min-h-[calc(100dvh-80px)] flex justify-center items-center z-0">
+      <div
+        class="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-16"
+      >
+        <div
+          class="w-50 h-50 md:h-70 md:w-70 lg:h-100 lg:w-100 shrink-0 overflow-hidden rounded-full"
+        >
+          <img class="h-full w-full object-cover" src="src/images/profile_pic.jpg" alt="Profile" />
         </div>
         <div class="flex flex-col items-center justify-center gap-2">
           <p class="text-gray-500 font-semibold">Hello, I'm</p>
-          <h1 class="text-4xl font-bold">Maksudur Rahman</h1>
+          <h1 class="text-2xl md:text-4xl font-bold">Maksudur Rahman</h1>
           <div>
-            <p class="typewriter mx-auto text-2xl text-gray-500 font-semibold">
+            <p class="typewriter mx-auto text-xl md:text-2xl text-gray-500 font-semibold">
               Full Stack Developer
             </p>
           </div>
-          <div class="py-8">
+          <div class="py-4 md:py-8">
             <a
-              class="p-4 w-42 border border-gray-500 rounded-4xl font-semibold hover:bg-black hover:text-white mr-2 transition-effect"
+              class="p-3 md:p-4 w-42 border border-gray-500 rounded-4xl font-semibold hover:bg-black hover:text-white mr-2 transition-effect"
               href="#projects"
               >View My Work</a
             >
             <a
-              class="p-4 w-42 border border-gray-500 rounded-4xl font-semibold bg-gray-700 text-white hover:bg-black transition-effect"
+              class="p-3 md:p-4 w-42 border border-gray-500 rounded-4xl font-semibold bg-gray-700 text-white hover:bg-black transition-effect"
               href="#contact"
               >Contact Info</a
             >
@@ -176,26 +180,35 @@
               onclick="window.open('https://www.linkedin.com/in/maksudurrhmn/')"
             ></i>
           </div>
+          <div class="py-4 md:py-8">
+            <a
+              class="p-3 md:p-4 w-42 border border-gray-500 rounded-4xl font-semibold hover:bg-black hover:text-white mr-2 transition-effect"
+              href="#projects"
+              >Download CV</a
+            >
+          </div>
         </div>
       </div>
     </section>
     <!-- Hero section ends -->
 
     <!-- About section start -->
-    <section id="about" class="animation min-h-dvh">
-      <div class="container mx-auto h-full">
+    <section id="about" class="animation min-h-dvh mb-16 md:mb-0">
+      <div class="container mx-auto h-full px-5">
         <div class="flex flex-col justify-center items-center">
           <p class="text-gray-500">Get To Know More</p>
-          <h2 class="text-5xl font-bold mt-4">About Me</h2>
+          <h2 class="text-3xl md:text-5xl font-bold mt-4">About Me</h2>
         </div>
-        <div class="flex justify-center items-center gap-16 h-full mt-36">
-          <div class="h-100 w-300">
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center gap-16 h-full mt-16 lg:mt-36"
+        >
+          <div class="h-50 w-60 lg:h-60 lg:w-300">
             <img class="h-full w-full" src="src/images/about-pic.png" alt="about me picture" />
           </div>
           <div>
-            <div class="flex gap-12">
+            <div class="flex flex-col md:flex-row gap-6 lg:gap-12 justify-center items-center">
               <div
-                class="p-12 w-1/2 h-70 border rounded-3xl border-black flex flex-col justify-center items-center gap-0.5"
+                class="p-12 w-full lg:w-1/2 h-70 border rounded-3xl border-black flex flex-col justify-center items-center gap-0.5 text-center"
               >
                 <img class="h-12 w-12" src="src/images/experience.png" alt="" />
                 <h3 class="text-2xl font-semibold">Experience</h3>
@@ -203,7 +216,7 @@
                 <p class="text-gray-500">2025 - Present</p>
               </div>
               <div
-                class="p-12 w-1/2 h-70 border rounded-3xl border-black flex flex-col justify-center items-center gap-0.5"
+                class="p-12 w-full lg:w-1/2 h-70 border rounded-3xl border-black flex flex-col justify-center items-center gap-0.5 text-center"
               >
                 <img class="h-12 w-12" src="src/images/education.png" alt="" />
                 <h3 class="text-2xl font-semibold">Education</h3>
@@ -212,8 +225,8 @@
                 <span class="text-gray-500">2020 - 2024</span>
               </div>
             </div>
-            <div class="">
-              <p class="text-gray-500 mt-8">
+            <div>
+              <p class="text-gray-500 mt-8 text-center lg:text-left">
                 I'm a Full Stack Developer passionate about creating modern, responsive, and
                 user-friendly web applications. I work with JavaScript, TypeScript, React, Next.js,
                 and Tailwind CSS to build clean and engaging digital experiences. I value clean
@@ -228,18 +241,18 @@
       <img
         src="src/images/arrow.png"
         alt=""
-        class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden md:block"
+        class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden lg:block"
         onclick="location.href = '#skills'"
       />
     </section>
     <!-- About section ends -->
 
     <!-- Skills section start -->
-    <section id="skills" class="animation min-h-dvh">
-      <div class="container mx-auto">
+    <section id="skills" class="animation min-h-dvh mb-16 md:mb-0">
+      <div class="container mx-auto px-5">
         <div class="flex flex-col justify-center items-center">
           <p class="text-gray-500">Explore My Skills</p>
-          <h2 class="text-5xl font-bold mt-4">Skills</h2>
+          <h2 class="text-3xl md:text-5xl font-bold mt-4">Skills</h2>
         </div>
         <div class="flex justify-center items-center h-full mt-20">
           <div class="border border-black rounded-2xl w-full p-12">
@@ -359,23 +372,21 @@
       <img
         src="src/images/arrow.png"
         alt=""
-        class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden md:block"
+        class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden lg:block"
         onclick="location.href = '#service'"
       />
     </section>
     <!-- Skills section ends -->
 
     <!-- Service section start -->
-
-    <!-- Service section start -->
-    <section id="service" class="animation min-h-dvh">
-      <div class="container mx-auto">
+    <section id="service" class="animation min-h-dvh mb-16 lg:mb-0">
+      <div class="container mx-auto px-5 lg:px-0">
         <div class="flex flex-col justify-center items-center">
           <p class="text-gray-500">What I Offer</p>
-          <h2 class="text-5xl font-bold mt-4">My Services</h2>
+          <h2 class="text-3xl md:text-5xl font-bold mt-4">My Services</h2>
         </div>
 
-        <div class="grid grid-cols-2 gap-12 mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 mt-20">
           <div
             class="border border-black rounded-2xl flex justify-center items-center flex-col p-8 gap-0.5"
           >
@@ -429,23 +440,20 @@
         <img
           src="src/images/arrow.png"
           alt=""
-          class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden md:block"
+          class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden lg:block"
           onclick="location.href = '#projects'"
         />
       </div>
     </section>
     <!-- Service section end -->
 
-    <!-- Service section ends -->
-
     <!-- Projects section starts -->
-
-    <section id="projects" class="animation relative min-h-dvh">
-      <div class="container mx-auto">
+    <section id="projects" class="animation relative min-h-dvh mb-16 md:mb-0">
+      <div class="container mx-auto px-5 lg:px-0">
         <!-- Section Heading -->
         <div class="flex flex-col items-center justify-center">
           <p class="text-gray-500">Browse My Recent</p>
-          <h2 class="mt-4 text-5xl font-bold">Projects</h2>
+          <h2 class="mt-4 text-3xl md:text-5xl font-bold">Projects</h2>
         </div>
         <!-- Carousel -->
         <div class="relative mx-auto max-w-7xl mt-16">
@@ -640,7 +648,7 @@
       <img
         src="src/images/arrow.png"
         alt=""
-        class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden md:block"
+        class="h-8 w-8 absolute right-32 bottom-32 cursor-pointer hidden lg:block"
         onclick="location.href = '#contact'"
       />
     </section>
@@ -649,10 +657,10 @@
 
     <!-- Contact section start -->
     <section id="contact" class="animation min-h-dvh">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-5 lg:px-0">
         <div class="flex flex-col items-center justify-center">
           <p class="text-gray-500">Get in Touch</p>
-          <h2 class="mt-4 text-5xl font-bold">Contact Me</h2>
+          <h2 class="mt-4 text-3xl md:text-5xl font-bold">Contact Me</h2>
         </div>
         <div class="flex flex-col justify-center items-center mt-20">
           <form
@@ -661,28 +669,28 @@
             method="POST"
           >
             <input
-              class="border-l-4 border-b-4 border-black outline-0 w-[80%] p-4"
+              class="border-l-4 border-b-4 border-black outline-0 w-full lg:w-[80%] p-4"
               type="text"
               name="name"
               placeholder="Enter Your Name"
               required
             />
             <input
-              class="border-l-4 border-b-4 border-black outline-0 w-[80%] p-4"
+              class="border-l-4 border-b-4 border-black outline-0 w-full lg:w-[80%] p-4"
               type="email"
               name="email"
               placeholder="Enter Your Email"
               required
             />
             <input
-              class="border-l-4 border-b-4 border-black outline-0 w-[80%] p-4"
+              class="border-l-4 border-b-4 border-black outline-0 w-full lg:w-[80%] p-4"
               type="tel"
               name="phone"
               placeholder="Phone Number"
               required
             />
             <textarea
-              class="border-l-4 border-b-4 border-black outline-0 w-[80%] p-4"
+              class="border-l-4 border-b-4 border-black outline-0 w-full lg:w-[80%] p-4"
               name="massage"
               placeholder="Your Massage"
               rows="8"
@@ -703,10 +711,10 @@
 
     <!-- Footer Section start -->
     <footer id="footer" class="animation">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-5 lg:px-0">
         <div class="flex flex-col justify-center items-center gap-16 py-12">
           <div
-            class="border border-black rounded-full py-6 px-8 flex justify-center items-center gap-8"
+            class="border hidden border-black rounded-full py-6 px-8 lg:flex justify-center items-center gap-8"
           >
             <a
               class="text-xl transition-effect border-b border-transparent hover:border-gray-500 hover:text-gray-500"
@@ -740,14 +748,14 @@
           </div>
           <div class="">
             <ul class="flex flex-col lg:flex-row items-center justify-center gap-8">
-              <li><a href="#about" class="nav-link text-2xl">About</a></li>
-              <li><a href="#experience" class="nav-link text-2xl">Skills</a></li>
-              <li><a href="#projects" class="nav-link text-2xl">Projects</a></li>
-              <li><a href="#service" class="nav-link text-2xl">Service</a></li>
-              <li><a href="#contact" class="nav-link text-2xl">Contact</a></li>
+              <li><a href="#about" class="nav-link text-xl lg:text-2xl">About</a></li>
+              <li><a href="#skills" class="nav-link text-xl lg:text-2xl">Skills</a></li>
+              <li><a href="#projects" class="nav-link text-xl lg:text-2xl">Projects</a></li>
+              <li><a href="#service" class="nav-link text-xl lg:text-2xl">Service</a></li>
+              <li><a href="#contact" class="nav-link text-xl lg:text-2xl">Contact</a></li>
             </ul>
           </div>
-          <p class="text-gray-500 text-lg">
+          <p class="text-gray-500 text-lg text-center">
             Copyright © 2026 Maksudur Rahman. All Rights Reserved.
           </p>
         </div>
