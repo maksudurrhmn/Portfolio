@@ -119,13 +119,16 @@
         </div>
 
         <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden lg:hidden px-5 pt-6 absolute right-20 z-999">
-          <ul class="flex flex-col gap-5 text-lg z-10">
-            <li><a href="#about" class="mobile-nav-link">About</a></li>
-            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
-            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
-            <li><a href="#service" class="mobile-nav-link">Service</a></li>
-            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <div
+          id="mobile-menu"
+          class="hidden lg:hidden px-16 py-6 absolute right-10 z-999 bg-white border border-gray-300 rounded-lg shadow-lg"
+        >
+          <ul class="flex flex-col gap-5 text-lg justify-center items-center">
+            <li><a href="#about" class="mobile-nav-link underline">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link underline">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link underline">Projects</a></li>
+            <li><a href="#service" class="mobile-nav-link underline">Service</a></li>
+            <li><a href="#contact" class="mobile-nav-link underline">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -133,7 +136,7 @@
     <!-- Header section ends -->
 
     <!-- Hero section start -->
-    <section class="animation min-h-[calc(100dvh-80px)] flex justify-center items-center z-0">
+    <section class="animation min-h-[calc(100dvh-80px)] flex justify-center items-center">
       <div
         class="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-16"
       >
@@ -193,7 +196,7 @@
     <!-- Hero section ends -->
 
     <!-- About section start -->
-    <section id="about" class="animation min-h-dvh mb-16 md:mb-0">
+    <section id="about" class="animation lg:min-h-dvh mb-16 lg:mb-0">
       <div class="container mx-auto h-full px-5">
         <div class="flex flex-col justify-center items-center">
           <p class="text-gray-500">Get To Know More</p>
@@ -248,7 +251,7 @@
     <!-- About section ends -->
 
     <!-- Skills section start -->
-    <section id="skills" class="animation min-h-dvh mb-16 md:mb-0">
+    <section id="skills" class="animation lg:min-h-dvh mb-16 lg:mb-0">
       <div class="container mx-auto px-5">
         <div class="flex flex-col justify-center items-center">
           <p class="text-gray-500">Explore My Skills</p>
@@ -379,7 +382,7 @@
     <!-- Skills section ends -->
 
     <!-- Service section start -->
-    <section id="service" class="animation min-h-dvh mb-16 lg:mb-0">
+    <section id="service" class="animation lg:min-h-dvh mb-16 lg:mb-0">
       <div class="container mx-auto px-5 lg:px-0">
         <div class="flex flex-col justify-center items-center">
           <p class="text-gray-500">What I Offer</p>
@@ -448,7 +451,7 @@
     <!-- Service section end -->
 
     <!-- Projects section starts -->
-    <section id="projects" class="animation relative min-h-dvh mb-16 md:mb-0">
+    <section id="projects" class="animation relative lg:min-h-dvh mb-16 lg:mb-0">
       <div class="container mx-auto px-5 lg:px-0">
         <!-- Section Heading -->
         <div class="flex flex-col items-center justify-center">
@@ -656,7 +659,7 @@
     <!-- Projects section ends -->
 
     <!-- Contact section start -->
-    <section id="contact" class="animation min-h-dvh">
+    <section id="contact" class="animation lg:min-h-dvh">
       <div class="container mx-auto px-5 lg:px-0">
         <div class="flex flex-col items-center justify-center">
           <p class="text-gray-500">Get in Touch</p>
@@ -669,28 +672,28 @@
             method="POST"
           >
             <input
-              class="border-l-4 border-b-4 border-black outline-0 w-full lg:w-[80%] p-4"
+              class="border-l-4 border-b-4 border-black outline-0 w-full md:w-[80%] p-4"
               type="text"
               name="name"
               placeholder="Enter Your Name"
               required
             />
             <input
-              class="border-l-4 border-b-4 border-black outline-0 w-full lg:w-[80%] p-4"
+              class="border-l-4 border-b-4 border-black outline-0 w-full md:w-[80%] p-4"
               type="email"
               name="email"
               placeholder="Enter Your Email"
               required
             />
             <input
-              class="border-l-4 border-b-4 border-black outline-0 w-full lg:w-[80%] p-4"
+              class="border-l-4 border-b-4 border-black outline-0 w-full md:w-[80%] p-4"
               type="tel"
               name="phone"
               placeholder="Phone Number"
               required
             />
             <textarea
-              class="border-l-4 border-b-4 border-black outline-0 w-full lg:w-[80%] p-4"
+              class="border-l-4 border-b-4 border-black outline-0 w-full md:w-[80%] p-4"
               name="massage"
               placeholder="Your Massage"
               rows="8"
